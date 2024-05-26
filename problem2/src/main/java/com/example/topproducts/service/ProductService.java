@@ -18,11 +18,9 @@ public class ProductService {
     }
 
     public List<Product> getTopProducts(String category, int n, int page, String sort, String order) {
-        // Mock API URLs
         List<String> apiUrls = List.of(
                 "https://api.company1.com/products?category=" + category,
                 "https://api.company2.com/products?category=" + category
-                // Add other company URLs
         );
 
         List<Product> allProducts = new ArrayList<>();
